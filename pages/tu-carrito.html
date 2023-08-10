@@ -27,22 +27,31 @@
                 </nav>
         </section>
     </header>
-    <main>
-        <section class="tuCarrito">
-            <div id="tuCarrito"><p>Tu Carrito</p></div>
-            <section> <!-- aca irian los productos que el usuario vaya a comprar --> </section>
-            <section>
-                <div>
-                    <p>Sub-Total:</p>
-                    <p>Total:</p>
-                    <div><!-- $subtotal --></div>
-                    <div><!-- %total --></div>
-                </div>
+    <main id="mainTC">
+        <section class="tuCarrito"> 
+            <div id="tuCarrito"><p class="pTC">Tu Carrito</p></div>
+            <div><p class="pArticulos">Articulos:</p></div>
+            <section class="articulosJS">
+                <!-- Aca se agreagrian los articulos deseados por el cliente -->
             </section>
-            <section>
-                <input type="checkbox"> <p>Aceptar Terminos y Condiciones</p>
-                <button><a href="">Cancelar</a></button>
-                <button><a href="">Finalizar compra</a></button>
+            <section class="opcionesTC">
+                <section>
+                    <div id="totalTC">
+                        <p>Total:</p>
+                        <p>Sub-Total:</p>
+                        <div><!-- $subtotal --></div>
+                        <div><!-- %total --></div>
+                    </div>
+                </section>
+                <section class="checkTC">
+                    <div class="divCondiciones">
+                        <input type="checkbox"> <p>Aceptar Terminos y Condiciones</p>
+                    </div>
+                    <div class="botonesTC">
+                        <button><a href="">Cancelar</a></button>
+                        <button><a href="">Finalizar compra</a></button>
+                    </div>
+                </section>
             </section>
         </section>
     </main>

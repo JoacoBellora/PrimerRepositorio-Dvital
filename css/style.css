@@ -307,6 +307,10 @@ footer{
     height: auto;
     flex-shrink: 0;
     margin: 2.8125rem 0 0 2.8125rem;
+    border-style: solid;
+    border-width: .125rem;
+    border-color: black;
+    border-radius: 0 25% 5%;
 }
 
 .contenedorSN{
@@ -331,4 +335,66 @@ footer{
 .visitanosSN{
     font-weight: bold;
     text-decoration: double;
+}
+
+.tuCarrito{
+    background-color: aliceblue;
+    width: 75%;
+    height: 70vh;
+    margin: auto;
+}
+
+#tuCarrito{
+    font-size: 1.5625rem;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.pTC{
+    padding: 1.25rem;
+}
+
+.pArticulos{
+    padding-left: .9375rem;
+}
+
+.checkTC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .3125rem;
+}
+
+#totalTC{
+    padding: .3125rem;
+}
+
+.divCondiciones{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: .2188rem;
+}
+
+.opcionesTC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: fit-content;
+    align-items: center;
+}
+
+.articulosJS{
+    width: 100%;
+    height: 75%;
+}
+
+.botonesTC{
+    align-items: center;
+    padding: .3125rem;
+}
+
+#mainTC{
+    height: 85vh;
 }
