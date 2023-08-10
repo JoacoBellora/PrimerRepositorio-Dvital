@@ -263,4 +263,72 @@ footer{
     justify-content: center;
     margin:auto;
     border-radius: 15% 15% 0 0;
-}       
+}   
+
+.divUbiSN{
+    width: auto;
+    margin: auto;
+    justify-content: center;
+}
+
+.ubi{
+    width: 17.1875rem;
+    height: 17.1875rem;
+    border-radius: 60%;
+    border-style: solid;
+    border-width: .125rem;
+    border-color: black;
+    margin-top: .625rem;
+}
+
+#mainSN{
+    background-color: bisque;
+    background-image: none;
+}
+
+.h2SobreN{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 2.8125rem;
+    margin-top: 7.8125rem;
+    justify-content: center;
+}
+
+.h2SobreN h2{
+    text-decoration: underline;
+    padding-bottom: .9375rem;
+}
+
+.fotoSN{
+    width: 28.125rem;
+    height: auto;
+    flex-shrink: 0;
+    margin: 2.8125rem 0 0 2.8125rem;
+}
+
+.contenedorSN{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.localSN{
+    display: grid;
+    grid-template-columns: 1;
+    justify-content: center;
+}
+
+.localSN p{
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    padding: .3125rem;
+}
+
+.visitanosSN{
+    font-weight: bold;
+    text-decoration: double;
+}
