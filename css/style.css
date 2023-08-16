@@ -25,6 +25,16 @@
     padding-right: 1.5625rem;
 }
 
+#navBar div a{
+    text-decoration: none;
+    color: brown;
+}
+
+#navBar div a:hover{
+    font-size: 1.125rem;
+    transition: 0.3s;
+}
+
 .pagesNavBar{
     text-decoration: none;
     list-style: none;
@@ -83,8 +93,7 @@ main{
     border-color: black;
     border-radius: 25%;
     border-style: groove;
-    box-shadow: rgb(19, 18, 18) .4375rem .4375rem;
-    
+    box-shadow: rgba(19, 18, 18, 0.822) .4375rem .4375rem;
 }
 
 .fotos-y-desc{
@@ -134,10 +143,17 @@ main section div figure figcaption h2{
     border-color: white;
     border: 1,.3125rem;
     border-style: groove;
+    border-radius: 7%;
+    margin-top: .25rem;
     padding: .1875rem .25rem .25rem .25rem;
     font-size: medium;
     text-decoration: white;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.boton-catalogo a{
+    text-decoration: none;
+    color: white;
 }
 
 .Ubicacion{
