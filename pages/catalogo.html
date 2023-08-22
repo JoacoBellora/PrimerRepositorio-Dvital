@@ -8,24 +8,66 @@
 </head>
 <body>
     <header>
-        <section class="contenedor1">
-            <div><img src="../assets/img/logo-vital-sin-bordes.png" alt="Grupo Vital" class="iconos-headerFooter" id="logo-vital-sin-bordes"></div>
-            <div class="divTitulo">
-            <h1 class="titulo">Grupo Vital</h1>
-            <div><p class="titulo" id="importaciones">Importaciones</p></div>
+        <nav class="nav">
+
+            <div class="nav__container">
+
+                <div class="divTitulo">
+                    <h1 class="titulo">Grupo Vital</h1>
+                    <p class="titulo" id="importaciones">Importaciones</p>
+                </div>
+                
+                <a href="#menu" class="nav__menu">
+                    <img src="../assets/menu.svg" class="nav__icon">
+                </a>
+                
+                <a href="#" class="nav__menu nav__menu--second">
+                    <img src="../assets/close.svg" class="nav__icon ">
+                </a>
+
+                <ul class="dropdown" id="menu">
+
+                    <li class="dropdown__list">
+                        <a href="./tucarrito.html" class="dropdown__link">
+                            <img src="../assets/img/carrito-de-compras-(2).png" class="dropdown__icon">
+                            <span class="dropdown__span">Tu Carrito</span>
+                        </a>
+                    </li>
+                    
+                    <li class="dropdown__list">
+                        <a href="../index.html" class="dropdown__link">
+                            <img src="../assets/house.svg" class="dropdown__icon">
+                            <span class="dropdown__span">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown__list">
+                        <a href="./catalogo.html" class="dropdown__link">
+                            <img src="../assets/img/libro(1).png" class="dropdown__icon">
+                            <span class="dropdown__span">Catalogo</span>
+                        </a>
+                    </li>
+
+
+                    <li class="dropdown__list">
+                        <a href="./nosotros.html" class="dropdown__link">
+                            <img src="../assets/help.svg" class="dropdown__icon">
+                            <span class="dropdown__span">Nosotros</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown__list">
+                        <a href="./contactanos.html" class="dropdown__link">
+                            <img src="../assets/img/sobre.png" class="dropdown__icon">
+                            <span class="dropdown__span">Contactanos</span>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
-                <nav>
-                    <div>
-                        <ul id="navBar">
-                            <div class="pagesNavBar"><li><a href="../index.html">Inicio</a></li></div>
-                            <div class="pagesNavBar"><li><a href="./catalogo.html">Catalogo</a></li></div>
-                            <div class="pagesNavBar"><li><a href="./tu-carrito.html">Mi Carrito</a></li></div>
-                            <div class="pagesNavBar"><li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li></div>
-                            <div class="pagesNavBar"><li><a href="./contactanos.html">Contactanos</a></li></div>
-                        </ul>
-                    </div>
-                </nav>
-        </section>
+
+        </nav>
     </header>
     <main class="mainCatalogo">
         <section class="contenedor-catalogo">
@@ -80,7 +122,7 @@
                 </div>
             </div>
             <div class="p8 botonCompra">
-                <img src="../assets/img/tablero fiinger joint.jpg" class="productos" alt="">
+                <img src="../assets/img/tablero-fiinger-joint.jpg" class="productos" alt="">
                 <div class="divBoton">
                     <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eveniet expedita voluptate veniam possimus eaque, eligendi placeat sit suscipit saepe repellendus quos</span>
                     <button class="agregarCarrito"><a href="./tu-carrito.html">Agregar al Carrito</a></button>
@@ -109,21 +151,21 @@
         <section>
     </main>
     <footer>
-        <div><img src="../assets/img/logo-vital-sin-bordes.png" alt="Distribudora Vital" class="iconos-headerFooter"></div>
-        <div>
-            <ul>
-                <li>La Paz 2015, 11200 Montevideo, Departamento de Montevideo</li>
-                <li>Lun. a Vier. de 9:00 a 17:00</li>
-                <li>tel. 91 429 230 y 097 402 668</li>
-            </ul>
+        <div id="divLogo">
+            <img src="../assets/img/logo-vital-sin-bordes.png" alt="Distribudora Vital" class="iconosFooter logoVitalFooter">
         </div>
-        <div><p>contactanos</p></div>
+        <ul id="ulFooter">
+            <li class="liFooter"><h2 class="h2Footer">Lun. a Vier. de 9:00 a 17:00</h2></li>
+            <li class="liFooter"><h2 class="h2Footer">tel. 91 429 230 y 097 402 668</h2></li>
+            <li class="liFooter"><h2 class="h2Footer" id="lapazFooter">La Paz 2015, 11200 Montevideo, Departamento de Montevideo</h2></li>
+        </ul>
+        <div><a href="./pages/contactanos.html" class="linkCatalogoF">CONTACTANOS</a></div>
         <section>
-            <a href="https://www.instagram.com/dvital.uy/"><img src="../assets/img/logotipo-de-instagram.png" alt="logotipo-de-instagram" class="iconos-headerFooter"></a>
+            <a href="https://www.instagram.com/dvital.uy/"><img src="../assets/img/logotipo-de-instagram.png" alt="logotipo-de-instagram" class="iconosFooter"></a>
             <p>@dvital.uy</p>
         </section>
         <section>
-            <img src="../assets/img/llamada-telefonica.png" alt="Telefono" class="iconos-headerFooter">
+            <img src="../assets/img/llamada-telefonica.png" alt="Telefono" class="iconosFooter">
             <p>tel. 91 429 230  097 402 668</p>
         </section>
     </footer>

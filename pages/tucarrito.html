@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
+    <title>Mi Carrito</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -68,22 +68,34 @@
             </div>
 
         </nav>
-    </header>  
-        <div>
-            <p>Contactanos</p>
-        </div>
-        <br>
-        <section>
-            <p>Informacion de contacto:</p>
-            <img src="" alt="Instragram">
-            <img src="" alt="Telefonos">
-            <img src="" alt="Gmail">
-            <img src="" alt="Mercado Libre">
+    </header>
+    <main id="mainTC">
+        <section class="tuCarrito"> 
+            <div id="tuCarrito"><p class="pTC">Tu Carrito</p></div>
+            <div><p class="pArticulos">Articulos:</p></div>
+            <section class="articulosJS">
+                <!-- Aca se agreagrian los articulos deseados por el cliente -->
+            </section>
+            <section class="opcionesTC">
+                <section>
+                    <div id="totalTC">
+                        <p>Total:</p>
+                        <p>Sub-Total:</p>
+                        <div><!-- $subtotal --></div>
+                        <div><!-- %total --></div>
+                    </div>
+                </section>
+                <section class="checkTC">
+                    <div class="divCondiciones">
+                        <input type="checkbox" required> <span>Aceptar Terminos y Condiciones</span>
+                    </div>
+                    <div class="botonesTC">
+                        <button><a href="">Cancelar</a></button>
+                        <button><a href="">Finalizar compra</a></button>
+                    </div>
+                </section>
+            </section>
         </section>
-        <div>
-            <input type="text">
-            <button>Enviar Comentario</button>
-        </div>    
     </main>
     <footer>
         <div id="divLogo">
@@ -104,5 +116,5 @@
             <p>tel. 91 429 230  097 402 668</p>
         </section>
     </footer>
-    
 </body>
+</html>

@@ -1,54 +1,168 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 
-.contenedor1{
-    width: 100%;
-    height: 4.6875rem;
-    position: sticky;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: row;
+body{
+    font-family: Arial;
+}
+
+
+.nav{
+    background-color: #000000;
+
+    --img1: scale(1);
+    --img2: scale(0);
+}   
+
+.nav:has( .dropdown:target ){
+    --img1: scale(0);
+    --img2: scale(1);
+
+    --clip:inset(0 0 0 0);
+
+}
+
+.nav__container{
+    width: 90%;
+    margin: 0 auto;
+    height: 70px;
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "title img";
     justify-content: space-between;
     align-items: center;
-    color: brown;
+
+    overflow: hidden;
 }
 
-#navBar{
+.nav__title{
+    color: #fff;
+    grid-area: title;
+}
+
+
+.nav__menu{
+    grid-area: img;
+    position: relative;
+    z-index: 10;
+
+    transform: var(--img1);
+}
+
+.nav__menu--second{
+    transform: var(--img2);
+}
+
+.nav__icon{
+    width: 30px;
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: #000;
+    width: 75%;
+    max-width: 300px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1em;
+
+    display: grid;
+    align-content:center ;
+    gap: 1rem;
+
+    overflow-y: auto;
+
+
+    clip-path: var(--clip, inset(0 0 100% 100%));
+    transition: clip-path .5s;
+}
+
+.dropdown__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.dropdown__list{
+    list-style: none;
+}
+
+.dropdown__link{
+    color: rgb(184, 187, 191);
+    padding: 1em .7em;
+    text-decoration: none;
+    
     display: flex;
-    flex-direction: row;
-    text-align: right;
+    align-items: center;
+    gap: .6rem;
+
+    position: relative;
+    background-color: var(--bg, transparent);
+    border-radius: 6px;
+}
+
+.dropdown__list:has( :checked ){
+    --rows: 1fr;
+    --rotate: rotate(180deg);
+    --bg: #28303B;
+}
+
+.dropdown__check{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.dropdown__arrow{
+    margin-left: auto;
+    transform: var(--rotate, 0);
+    transition: .2s transform;
+}
+
+.dropdown__content{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+}
+
+.dropdown__sub{
+    overflow: hidden;
+
+}
+
+.dropdown__li{
+    width: 85%;
     list-style: none;
-    row-gap: .9375rem;
-    padding-right: 1.5625rem;
+    margin-left: auto;
 }
 
-#navBar div a{
+.dropdown__anchor{
+    padding: 1em 0;
+    display: block;
+    color: #B6BABE;
     text-decoration: none;
-    color: brown;
-}
-
-#navBar div a:hover{
-    font-size: 1.125rem;
-    transition: 0.3s;
-}
-
-.pagesNavBar{
-    text-decoration: none;
-    list-style: none;
-    margin: 25% .9375rem;
 }
 
 .divTitulo{
-    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+
     align-items: center;
     text-align: center;
+    color: brown;
 }
 
 .titulo{
-    font-size: 2.6875rem;
+    font-size: 35px;
+    width: max-content;
 }
 
 #importaciones{
@@ -59,9 +173,15 @@
 }
 
 .iconos-headerFooter{
-    width: 1.5625rem;
-    height: auto;
+    width: 1.5625rem;   
+    height: 1.5625rem;
     padding: 0 .9375rem;
+}
+
+#barraOpciones{
+    width: 1.5625rem;
+    height: 1.5625rem;  
+
 }
 
 main{
@@ -71,18 +191,17 @@ main{
     padding-bottom: 2.8125rem;
 }
 
-.msgPubli{
-    height: 4.6875rem;
-    padding-top: 7.625rem;
-    justify-content: center;
-    display: flex;
-    
+.mainIndex h2{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding-top: 2.1875rem;
 }
 
 .fotosIndex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -92,12 +211,12 @@ main{
     margin-top: 3.375rem;
     border-color: black;
     border-radius: 25%;
-    border-style: groove;
+    border-style: solid;
     box-shadow: rgba(19, 18, 18, 0.822) .4375rem .4375rem;
 }
 
 .fotos-y-desc{
-    margin: 2.8125rem;
+    width: 100% ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,6 +275,15 @@ main section div figure figcaption h2{
     color: white;
 }
 
+.boton-catalogo a:hover{
+    color: brown;
+    font-size: 1.125rem;
+}
+
+.boton-catalogo:hover{
+    border-color: brown;
+}
+
 .Ubicacion{
     margin: auto;
     margin-top: 1.5625rem;
@@ -165,7 +293,7 @@ main section div figure figcaption h2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: maroon;
+    background-color: rgb(167, 0, 0);
     padding: .3125rem;
     border-radius: 20%;
 }
@@ -197,12 +325,38 @@ footer{
     border-top: #2e2d2d .3125rem;
     justify-content: space-evenly;
     padding: .3125rem ;
+    gap: .3125rem;
+}
+
+#ulFooter{
+    margin-left: .9375rem;
+}
+
+#ulFooter li h2{
+    font-size: .875rem;
+}
+
+.linkCatalogoF{
+    text-decoration: underline;
+    color: rgb(66, 0, 0);
+    padding: 0 .3125rem;
+    font-weight: 550;
 }
 
 .iconosFooter{
-    width: 1.5625rem;
+    width: 2.5rem;
     height: auto;
-    
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer section p{
+    font-weight: 600;
 }
 
 .contenedor-catalogo{
@@ -272,6 +426,11 @@ footer{
     border-width: .125rem;
 }
 
+.agregarCarrito a{
+    text-decoration: none;
+    color: white;
+}
+
 .agregarCarrito{
     width: 100%;
     background-color: black;
@@ -279,7 +438,17 @@ footer{
     justify-content: center;
     margin:auto;
     border-radius: 15% 15% 0 0;
-}   
+}
+
+.agregarCarrito a:hover{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold   ;
+}
+
+.agregarCarrito:hover{
+    background-color: white;
+}
 
 .divUbiSN{
     width: auto;
@@ -414,3 +583,129 @@ footer{
 #mainTC{
     height: 85vh;
 }
+
+@media (max-width:1105px){
+    .fotosIndex{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 2.8125rem;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    .Economia{
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    justify-content: center;
+    }
+}
+
+@media (max-width:719px){
+    #divPubli{
+        width: 100%;
+    }
+    #msgPubli{
+        width: fit-content;
+        height: auto;
+        margin: auto;
+        font-size: 1.375rem;
+    }
+    .fotosIndex{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+    .Calidad{
+        grid-row: 1;
+    }
+    .Confianza{
+        grid-row: 2;
+    }
+    .Economia{
+        grid-row: 3;
+    }
+    .ecc{
+        width: 14.0625rem;
+        height: 14.0625rem;
+    }
+    .indexCatalogo p{
+        padding-left: .625rem;
+        padding-top: .25rem;
+        font-size: .9375rem;
+    }
+    .boton-catalogo{
+        padding-bottom: .1875rem;
+    }
+
+    #nuevo-local{
+        font-size: .9375rem;
+        text-decoration: underline;
+    }
+    .Ubicacion p{
+        font-size: .8125rem;
+        font-weight: 300;
+        padding: 0 .0625rem;
+    }
+    .Ubicacion{
+        width: 100%;
+    }
+    #divubi{
+        width: 100%;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        padding-bottom: .625rem;
+    }
+    .fotoUbi{
+        width: 75%;
+        height: auto;
+        margin: auto;
+        box-shadow: .4375rem .4375rem;
+    }
+    .msgPubli h2{
+        width: fit-content;
+    }
+
+    footer{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+    }
+    #divLogo{
+        display: flex;
+        justify-content: center;
+    }
+    .logoVitalFooter{
+        width: 3.75rem;
+        justify-content: center;
+    }
+    footer div{
+        display: flex;
+        justify-content: center;
+    }
+    footer div ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3125rem;
+    margin: .375rem 0;
+    }
+    .liFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    #lapazFooter{
+        width: fit-content;
+        
+    }
+    .h2Footer{
+        width: fit-content;
+        height: fit-content;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;}
