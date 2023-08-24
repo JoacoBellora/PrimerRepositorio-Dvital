@@ -467,8 +467,10 @@ footer section p{
 }
 
 #mainSN{
-    background-color: bisque;
-    background-image: none;
+    background-image: url(../assets/img/Rectangle48.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
 }
 
 .h2SobreN{
@@ -478,18 +480,18 @@ footer section p{
     position: relative;
     flex-direction: column;
     margin-left: 2.8125rem;
-    margin-top: 7.8125rem;
+
     justify-content: center;
 }
 
-.h2SobreN h2{
+.h2SobreN .h2SN{
     text-decoration: underline;
     padding-bottom: .9375rem;
 }
 
-.fotoSN{
+/* .fotoSN{
     width: 28.125rem;
-    height: auto;
+    height: auto
     flex-shrink: 0;
     margin: 2.8125rem 0 0 2.8125rem;
     border-style: solid;
@@ -497,24 +499,43 @@ footer section p{
     border-color: black;
     border-radius: 0 25% 5%;
 }
-
+ */
 .contenedorSN{
+    width: 90%;
+    height: fit-content;
+    margin: 0 .3125rem .625rem .3125rem;
+    margin-left: 1.5625rem;
+    padding: .625rem;
+
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(255, 228, 196, 0.808);
+    border-radius: .5rem;
 }
 
 .localSN{
+    margin: 0 .7813rem;
+    padding: .4375rem;
+
     display: grid;
     grid-template-columns: 1;
     justify-content: center;
+
+    background-color: rgba(255, 228, 196, 0.808);
+    border-radius: .5625rem ;
+
 }
 
 .localSN p{
     width: auto;
     margin: auto;
-    justify-content: center;
     padding: .3125rem;
+    
+    justify-content: center;
+
 }
 
 .visitanosSN{
@@ -523,12 +544,16 @@ footer section p{
 }
 
 .tuCarrito{
-    background-color: aliceblue;
     width: 75%;
-    height: 70vh;
+    height: 100%;
     margin: auto;
-}
 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 10% 60% 10%;
+    
+    background-color: aliceblue;
+}    
 #tuCarrito{
     font-size: 1.5625rem;
     justify-content: center;
@@ -572,7 +597,7 @@ footer section p{
 
 .articulosJS{
     width: 100%;
-    height: 75%;
+    height: 67%;
 }
 
 .botonesTC{
@@ -583,6 +608,8 @@ footer section p{
 #mainTC{
     height: 85vh;
 }
+
+/* MEDIA QUERYS DE 1105PX Y 719PX (MAX)  */
 
 @media (max-width:1105px){
     .fotosIndex{
@@ -598,6 +625,29 @@ footer section p{
     grid-row: 2;
     grid-column: 1 / span 2;
     justify-content: center;
+    }
+    .contenedorSN{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .divImgSN{
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .fotoSN{
+        margin: 3.125rem 0 0 0;
+    }
+    .h2SobreN{
+        grid-area: 1;
+    }
+    .h2SobreN h2{
+        padding-left: 1.5625rem;
+        font-size: 1.875rem;
+    }
+    .h2SobreN p{
+        flex-wrap: wrap;
+        padding-right: .3125rem;
     }
 }
 
@@ -708,4 +758,31 @@ footer section p{
         height: fit-content;
         font-size: 14px;
         font-weight: bold;
-        font-family: 'Times New Roman', Times, serif;}
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .opcionesTC{
+        display: grid;
+        grid-template-columns: auto;
+        padding: .25rem;
+    }
+    .divCondiciones{
+        gap: .1875rem;
+        font-size: small;
+    }
+    #totalTC p{
+        font-size: .8125rem;
+    }
+}
+
+@media (max-width:450px){
+    .contenedorSN{
+        padding: 0;
+    }
+    .h2SobreN{
+        padding: .3125rem;
+    }
+    .checkTC{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
