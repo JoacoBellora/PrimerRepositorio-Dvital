@@ -609,6 +609,57 @@ footer section p{
     height: 85vh;
 }
 
+.mainContactanos{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+
+    background-color: bisque;
+}
+
+.pContactanos{
+    margin: 1.5625rem auto 1.5625rem auto;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5625rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.infContacto{
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.infContacto p{
+    padding: 0 0 .3125rem 2.1875rem ;
+    font-weight: 600;
+}
+
+.fotosContactanos{
+    width: 4.6875rem;
+    height: 4.6875rem;
+}
+
+.infContacto img{
+    margin: .4688rem;
+}
+
+.divComentario{
+    width: 20%;
+    height: 3.75rem;
+    padding: .9375rem;
+    
+}
+
+
 /* MEDIA QUERYS DE 1105PX Y 719PX (MAX)  */
 
 @media (max-width:1105px){
