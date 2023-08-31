@@ -1,0 +1,169 @@
+@media (max-width:1105px){
+    .fotosIndex{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 2.8125rem;
+        justify-content: center;
+        margin: auto;
+        .Economia{
+            grid-row: 2;
+            grid-column: 1 / span 2;
+            justify-content: center;
+            }    
+        }
+    .contenedorSN{
+        display: grid;
+        grid-template-columns: 100%;
+        .h2SobreN{
+            grid-area: 1;
+            .h2SN{
+                padding-left: 1.5625rem;
+                font-size: 1.875rem;
+                }
+            .pSN{
+                flex-wrap: wrap;
+                padding-right: .3125rem;
+            }
+        }
+    }
+    .fotoSN{
+        margin: 3.125rem 0 0 0;
+    }
+}
+
+@media (max-width:719px){
+    #divPubli{
+        width: 100%;
+        #msgPubli{
+            width: fit-content;
+            height: auto;
+            margin: auto;
+            font-size: 1.375rem;
+        }
+    }
+    .fotosIndex{
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        .Calidad{
+            grid-row: 1;
+        }
+        .Confianza{
+            grid-row: 2;
+        }
+        .Economia{
+            grid-row: 3;
+        }
+    }
+    .fotos-y-desc{
+        .ecc{
+            width: 14.0625rem;
+            height: 14.0625rem;
+        }
+    }
+    .indexCatalogo{ 
+        &:has(p){
+        padding-left: .625rem;
+        padding-top: .25rem;
+        font-size: .9375rem;
+        .boton-catalogo{
+            padding-bottom: .1875rem;
+            }
+        }
+    }
+    .Ubicacion{
+        width: 100%;
+        #nuevo-local{
+            font-size: .9375rem;
+            text-decoration: underline;
+        }
+        &:has(p){
+            font-size: .8125rem;
+            font-weight: 300;
+            padding: 0 .0625rem;
+        }
+        #divubi{
+            width: 100%;
+            margin-left: auto;
+            display: flex;
+            justify-content: center;
+            padding-bottom: .625rem;
+            .fotoUbi{
+                width: 75%;
+                height: auto;
+                margin: auto;
+                box-shadow: .4375rem .4375rem;
+        }
+        }
+    }
+    .opcionesTC{
+        display: grid;
+        grid-template-columns: auto;
+        padding: .25rem;
+        #sectTC #totalTC p{
+            font-size: .8125rem;
+        }
+    }
+    .divCondiciones{
+        gap: .1875rem;
+        font-size: small;
+    }
+    footer{
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        #divLogo{
+            display: flex;
+            justify-content: center;
+            .logoVitalFooter{
+                width: 3.75rem;
+                justify-content: center;
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .3125rem;
+        margin: .375rem 0;
+        .liFooter{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            #lapazFooter{
+                width: fit-content;
+                
+            }
+            .h2Footer{
+                width: fit-content;
+                height: fit-content;
+                font-size: 14px;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+    }
+}
+}
+
+@media (max-width:450px){
+    .contenedorSN{
+        padding: 0;
+        .h2SobreN{
+            padding: .3125rem;
+        }
+    }
+    .checkTC{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+

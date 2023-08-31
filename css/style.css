@@ -8,6 +8,7 @@ body{
     font-family: Arial;
 }
 
+/* ----------------------------------------------------------------------------------------------- */
 
 .nav{
     background-color: #000000;
@@ -149,6 +150,8 @@ body{
     text-decoration: none;
 }
 
+/* -------------------------------------------------------------------------------------------------- */
+
 .divTitulo{
     width: fit-content;
     height: fit-content;
@@ -225,22 +228,6 @@ main{
 
 .fotos-y-desc h2{
     margin: .625rem ;
-}
-
-main section div figure figcaption{
-    justify-content: center;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    position: absolute;
-}
-
-main section div figure figcaption h2{
-    width:fit-content ;
-    align-self: center;
-    height: fit-content;
-    text-align: center;
-    position: relative;
 }
 
 .indexCatalogo{
@@ -659,8 +646,7 @@ footer section p{
     
 }
 
-
-/* MEDIA QUERYS DE 1105PX Y 719PX (MAX)  */
+/* MEDIA QUERYS DE 1105PX Y 719PX (MAX)  -----------------------------------------------------------------------------------------------*/
 
 @media (max-width:1105px){
     .fotosIndex{
@@ -680,11 +666,6 @@ footer section p{
     .contenedorSN{
         display: grid;
         grid-template-columns: 100%;
-    }
-    .divImgSN{
-        margin: auto;
-        align-items: center;
-        justify-content: center;
     }
     .fotoSN{
         margin: 3.125rem 0 0 0;
@@ -763,9 +744,6 @@ footer section p{
         height: auto;
         margin: auto;
         box-shadow: .4375rem .4375rem;
-    }
-    .msgPubli h2{
-        width: fit-content;
     }
 
     footer{

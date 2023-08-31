@@ -1,0 +1,17 @@
+/* Todo lo correspondiente a mixins variables y funciones */
+
+@import "./utilities/variables";
+
+/* Todo lo correspondiente al codigo */
+
+@import "./base/reset";
+@import "./base/typo";
+@import "./base/generales";
+@import "./layout/_header.scss";
+@import "./layout/mains";
+@import "./layout/footer";
+
+
+/* Todo lo correspondiente a las mediaquerys */
+
+@import "./layout/mediaQ"

@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #2a2929;
+    border-top: #2e2d2d .3125rem;
+    justify-content: space-evenly;
+    padding: .3125rem ;
+    gap: .3125rem;
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-weight: 600;
+        }
+    }
+    #ulFooter{
+        margin-left: .9375rem;
+        .h2Footer{
+            font-size: .875rem;
+        }
+    }
+    .linkCatalogoF{
+        text-decoration: underline;
+        color: rgb(66, 0, 0);
+        padding: 0 .3125rem;
+        font-weight: 550;
+    }
+    .iconosFooter{
+        width: 2.5rem;
+        height: auto;
+    }
+}
