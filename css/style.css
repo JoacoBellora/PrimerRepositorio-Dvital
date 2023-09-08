@@ -803,6 +803,7 @@ footer section p{
         display: grid;
         grid-template-rows: auto auto;
         justify-content: center;
+        align-items: center;
     }
     .Calidad{
         grid-row: 1;
