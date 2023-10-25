@@ -26,18 +26,34 @@ body{
 }
 
 .nav__container{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     height: 70px;
 
     display: grid;
-    grid-template-columns: max-content max-content;
-    grid-template-areas: "title img";
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "title sesion";
     justify-content: space-between;
     align-items: center;
 
     overflow: hidden;
 }
+
+.sesionContainer{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-content: center;
+}
+
+.sesionContainer a{
+        text-decoration: underline;
+        color: brown;
+        padding-top: .625rem    ;
+}
+
+
 
 .nav__title{
     color: #fff;
@@ -200,7 +216,7 @@ main{
     width: fit-content;
     height: fit-content;
     margin: auto;
-    padding-top: 2.1875rem;
+    padding-top: 1.875rem ;
 }
 
 .fotosIndex{
@@ -276,19 +292,20 @@ main{
 .Ubicacion{
     margin: auto;
     margin-top: 1.5625rem;
-    width: fit-content;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(167, 0, 0);
+    background-color: rgba(167, 0, 0, 0.886);
     padding: .3125rem;
     border-radius: 20%;
 }
 
 #nuevo-local{
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .Ubicacion p{
@@ -721,6 +738,111 @@ footer section p{
     color: rgb(0, 0, 0);
 }
 
+/* INICIO DE SESION */
+
+.containerIS{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(153, 20, 33, 0.8),rgba(0, 0, 0, 0.8)), url(../assets/img/scott-blake-x-ghf9LjrVg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 28.125rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 3.125rem 3.75rem 4.375rem;
+    text-align: center;
+
+}
+
+.form-box h1{
+    font-size: 1.875rem;
+    margin-bottom: 3.75rem;
+    color: #cf0b0b;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 1.875rem;
+    height: .25rem;
+    border-radius: .1875rem;
+    background: #cf0b0b;
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background-color: #eaeaea;
+    margin: .9375rem 0 ;
+    border-radius: .1875rem;
+    display: flex;
+    align-items: center;
+    max-height: 3.75rem;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 1.125rem .9375rem;
+}
+
+.input-field i{
+    margin-left: .9375rem;
+    color: #999;
+}
+
+form p{
+    text-align: left;
+    font-size: .8125rem;
+}
+form p a{
+    text-decoration: underline;
+    color: #951111;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.75rem;
+
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: #a50000;
+    color: #fff;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 17.5rem;
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
 /* MEDIA QUERYS DE 1105PX Y 719PX (MAX)  -----------------------------------------------------------------------------------------------*/
 
 @media (max-width:1105px){
