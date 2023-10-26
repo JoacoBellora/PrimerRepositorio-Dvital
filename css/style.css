@@ -374,6 +374,7 @@ footer section p{
     background-color: #be27279d;
     margin: auto;
     justify-content: space-evenly;
+    
 }
 
 .catalogoC{
@@ -842,6 +843,34 @@ form p a{
 .btn-field button.disable{
     background: #eaeaea;
     color: #555;
+}
+
+.btn-ingresar button{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1.7rem;
+
+    justify-content: center;
+    align-items: center;
+    margin: .625rem auto;
+}
+
+.btn-go button{
+    flex-basis: 48%;
+    background: #a50000;
+    color: #eaeaea;
+    height: 1.25rem;
+    width: max-content;
+    border-radius: .1875rem;
+    padding: .1875rem .3125rem;
+    border: .0313rem solid black;
+    outline: 0;
+    cursor: pointer;
+    margin-top: .625rem;
+}
+.removed{
+    display: none;
 }
 /* MEDIA QUERYS DE 1105PX Y 719PX (MAX)  -----------------------------------------------------------------------------------------------*/
 
