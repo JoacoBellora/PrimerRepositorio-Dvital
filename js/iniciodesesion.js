@@ -10,7 +10,9 @@
         nameField.style.maxHeight = "0";
         title.innerHTML = "Sign In";
         signupBTN.classList.add("disable");
-        signinBTN.classList.remove("disable")
+        signinBTN.classList.remove("disable");
+        
+        const submitSI = document.getElementById('btnRegistrarse')
         
         const loginForm = document.getElementById('form')
         loginForm.addEventListener('submit', (e)=>{
@@ -34,6 +36,7 @@
         title.innerHTML = "Sign Up";
         signinBTN.classList.add("disable");
         signupBTN.classList.remove("disable")
+        
         
         const signupForm = document.getElementById('form')
         
