@@ -21,46 +21,34 @@
 <body>
     <header>
         <nav class="nav">
-            
+
             <div class="nav__container">
-                
+
                 <div class="divTitulo">
                     <h1 class="titulo">Grupo Vital</h1>
                     <p class="titulo" id="importaciones">Importaciones</p>
-                </div>
                 
-                <div class="sesionContainer"> 
-                    <a href="./pages/sesion.html" class="btn-sesion">INICIAR SESION</a>
-                    
-                    
-                    <a href="#menu" class="nav__menu">
-                        <img src="./assets/menu.svg" class="nav__icon">
-                    </a>
-                    
-                    <a href="#" class="nav__menu nav__menu--second">
-                        <img src="./assets/close.svg" class="nav__icon ">
-                    </a>
+                
+                </div class="iconContainer">  
+                        
+                    <img src="../assets/menu.svg" class="nav__icon"  id="drop">
+
+                    <img src="../assets/close.svg" class="nav__icon " id="cerrar">   
+                
                 </div>
 
                 <ul class="dropdown" id="menu">
-
-                    <li class="dropdown__list">
-                        <a href="./pages/tucarrito.html" class="dropdown__link">
-                            <img src="./assets/img/carrito-de-compras-(2).png" class="dropdown__icon">
-                            <span class="dropdown__span">Tu Carrito</span>
-                        </a>
-                    </li>
                     
                     <li class="dropdown__list">
-                        <a href="./index.html" class="dropdown__link">
-                            <img src="./assets/house.svg" class="dropdown__icon">
+                        <a href="index.html" class="dropdown__link">
+                            <img src="../assets/house.svg" class="dropdown__icon">
                             <span class="dropdown__span">Inicio</span>
                         </a>
                     </li>
 
                     <li class="dropdown__list">
                         <a href="./pages/catalogo.html" class="dropdown__link">
-                            <img src="./assets/img/libro(1).png" class="dropdown__icon">
+                            <img src="../assets/img/libro(1).png" class="dropdown__icon">
                             <span class="dropdown__span">Catalogo</span>
                         </a>
                     </li>
@@ -68,14 +56,14 @@
 
                     <li class="dropdown__list">
                         <a href="./pages/nosotros.html" class="dropdown__link">
-                            <img src="./assets/help.svg" class="dropdown__icon">
+                            <img src="../assets/help.svg" alt="nosotros m" class="dropdown__icon">
                             <span class="dropdown__span">Nosotros</span>
                         </a>
                     </li>
 
                     <li class="dropdown__list">
                         <a href="./pages/contactanos.html" class="dropdown__link">
-                            <img src="./assets/img/sobre.png" class="dropdown__icon">
+                            <img src="../assets/img/sobre.png" alt="contactanos" class="dropdown__icon">
                             <span class="dropdown__span">Contactanos</span>
                         </a>
                     </li>
@@ -139,6 +127,6 @@
 
 
 
-
+    <script src="../js/nav.js"></script>
 </body>
 </html>
