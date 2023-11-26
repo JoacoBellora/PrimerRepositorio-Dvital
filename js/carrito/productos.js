@@ -6,6 +6,7 @@ const productos = [
         <li>23 micrones de espesor</li>`,
         precio: 200,
         Img: "../assets/img/OIP-(1).jpg",
+        cantidad: 1,
     },
     {
         Id: 2,
@@ -15,6 +16,7 @@ const productos = [
         <LI>600 x 250 x 150</LI> `,
         precio: 200,
         Img: "../assets/img/OIP-(2).jpg",
+        cantidad: 1,
     },
     {
         Id: 3,
@@ -23,6 +25,7 @@ const productos = [
         <li>Usado para actividades de construcción en todo tipo de obras.</li>`,
         precio: 200,
         Img: "../assets/img/OIP.jpg",
+        cantidad: 1,
     },
     {
         Id: 4,
@@ -32,6 +35,7 @@ const productos = [
         <li>Macho-hembra</li>`,
         precio: 200,
         Img: "../assets/img/R(1).jpg",
+        cantidad: 1,
     },
     {
         Id: 5,
@@ -41,6 +45,7 @@ const productos = [
         <li>Apto para cartón, papel o nylon</li>`,
         precio: 200,
         Img: "../assets/img/R(2).jpg",
+        cantidad: 1,
     },
     {
         Id: 6,
@@ -48,7 +53,8 @@ const productos = [
         caracteristicas: `<li>Cuenta con 50cm de ancho y 5kg de peso. </li>
         <li>23 micrones de espesor.</li>`,
         precio: 200,
-        Img: "../assets/img/R.jpg"
+        Img: "../assets/img/R.jpg",
+        cantidad: 1,
     },
     {
         Id: 7,
@@ -56,6 +62,7 @@ const productos = [
         caracteristicas: `<li>Para corte de bloques celulares</li>`,
         precio: 200,
         Img: "../assets/img/serru2b.jpg",
+        cantidad: 1,
     },
     {
         Id: 8,
@@ -64,6 +71,7 @@ const productos = [
         <li>Aptos para mesadas, muebles o revestimientos</li>`,
         precio: 200,
         Img: "../assets/img/tablero-fiinger-joint.jpg",
+        cantidad: 1,
     },
     {
         Id: 9,
@@ -73,6 +81,7 @@ const productos = [
         <li>Compatible con numerosos sistemas de encofrado.</li>`,
         precio: 200,
         Img: "../assets/img/vigah20. jpg.jpg",
+        cantidad: 1,
     },
     {
         Id: 10,
@@ -81,5 +90,6 @@ const productos = [
         <li>8»x3»x6mts., 4.10mts., 8mts.</li>`,
         precio: 200,
         Img: "../assets/img/Vigas finger joint.jpg",
+        cantidad: 1,
     },
 ]
